@@ -40,8 +40,37 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="ImageReader.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Resources\training_Data\five_1.png" />
+      <Content Include="Resources\training_Data\five_2.png" />
+      <Content Include="Resources\training_Data\five_3.png" />
+      <Content Include="Resources\training_Data\five_4.png" />
+      <Content Include="Resources\training_Data\five_5.png" />
+      <Content Include="Resources\training_Data\four_1.png" />
+      <Content Include="Resources\training_Data\four_2.png" />
+      <Content Include="Resources\training_Data\four_3.png" />
+      <Content Include="Resources\training_Data\four_4.png" />
+      <Content Include="Resources\training_Data\four_5.png" />
+      <Content Include="Resources\training_Data\number-template.xcf" />
+      <Content Include="Resources\training_Data\one_1.png" />
+      <Content Include="Resources\training_Data\one_2.png" />
+      <Content Include="Resources\training_Data\one_3.png" />
+      <Content Include="Resources\training_Data\one_4.png" />
+      <Content Include="Resources\training_Data\one_5.png" />
+      <Content Include="Resources\training_Data\three_1.png" />
+      <Content Include="Resources\training_Data\three_2.png" />
+      <Content Include="Resources\training_Data\three_3.png" />
+      <Content Include="Resources\training_Data\three_4.png" />
+      <Content Include="Resources\training_Data\three_5.png" />
+      <Content Include="Resources\training_Data\two_1.png" />
+      <Content Include="Resources\training_Data\two_2.png" />
+      <Content Include="Resources\training_Data\two_3.png" />
+      <Content Include="Resources\training_Data\two_4.png" />
+      <Content Include="Resources\training_Data\two_5.png" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
