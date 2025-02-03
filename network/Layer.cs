@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace ainum.network
 {
@@ -6,10 +7,16 @@ namespace ainum.network
     {
         public Layer prevLayer;
         public Layer nextLayer;
+        public Network ParentNetwork;
         public Neuron[] neurons;
+        public float[,] deltaweights;
+        public IList<float[,]> deltadeltaweights;
 
-        public Layer(int NeuronCount)
+        public Layer(int NeuronCount, Network parentNetwork)
         {
+            this.deltaweights = new float[neurons.Length, neurons[0].GetWeights().Length];
+            this.deltadeltaweights = new List<float[,]>();
+            this.ParentNetwork = parentNetwork;
             neurons = new Neuron[NeuronCount];
             for (int i = 0; i < NeuronCount; i++)
             {
@@ -33,6 +40,54 @@ namespace ainum.network
             for (int i = 0; i < inputs.Length; i++)
             {
                 neurons[i].setActivation(inputs[i]);
+            }
+        }
+
+        public bool propagate()
+        {
+            if (prevLayer == null) return true;
+            else
+            {
+                for (int i = 0; i < neurons.Length; i++)
+                {
+                    float[] neurondata = neurons[i].calcualteDesiredWeightDelta();
+                    for (int j = 0; j < neurondata.Length; j++)
+                    {
+                        deltaweights[i, j] = neurondata[j];
+                    }
+                }
+
+                deltadeltaweights.Add(deltaweights);
+                return prevLayer.propagate();
+            }
+        }
+        public void commitPropagatedValues()
+        {
+            float[,] finalaveragedeltaweights = new float[neurons.Length, neurons[0].GetWeights().Length];
+            for (int j = 0; j < neurons.Length; j++)
+            {
+                int times = 0;
+                float[] weightedvalues = new float[neurons[j].GetWeights().Length];
+                for (int i = 0; i < deltadeltaweights.Count; i++)
+                {
+                    for( int k =0; k< neurons[j].GetWeights().Length; k++)
+                    {
+                        weightedvalues[k] += deltadeltaweights[i][j, k];
+                    }
+                    for (int l=0; l<neurons[j].GetWeights().Length; l++)
+                    {
+                        finalaveragedeltaweights[j, l] = weightedvalues[l] / deltadeltaweights.Count;
+                    }
+                }   
+            }
+            for (int i = 0; i < neurons.Length; i++)
+            {
+                float[] finaldeltaForNeuron = new float[neurons[i].GetWeights().Length];
+                for (int j = 0; j < neurons[i].GetWeights().Length; j++)
+                {
+                    finaldeltaForNeuron[j] = finalaveragedeltaweights[i, j];
+                }
+                neurons[i].commitPropagation(finaldeltaForNeuron);
             }
         }
 

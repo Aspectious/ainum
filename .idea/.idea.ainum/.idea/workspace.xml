@@ -5,55 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5573e6d-8779-47d9-82da-ed660fa39b9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/forms/ImageTool.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/ManualPropationForm.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/ManualPropationForm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/NetworkCreationWindow.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/NetworkCreationWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/mainWindow.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/mainWindow.Logic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/mainWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/ILayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/INeuron.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/Layer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/Network.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/NetworkSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/Neuron.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/DataUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/Entropy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/ImageUtil.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/MathUtils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ainum/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ainum/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ainum/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ainum/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageReader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/number-template.xcf" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/training_Data/number-template.xcf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ainum.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ainum.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/network/Layer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/Network.cs" beforeDir="false" afterPath="$PROJECT_DIR$/network/Network.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/NetworkSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/network/NetworkSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/Neuron.cs" beforeDir="false" afterPath="$PROJECT_DIR$/network/Neuron.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/MathUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/MathUtils.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +48,13 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\griff\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\griff\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\griff\\AppData\\Local\\Symbols\\src"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -123,6 +88,7 @@
       <workItem from="1725471801213" duration="1429000" />
       <workItem from="1738452718547" duration="1370000" />
       <workItem from="1738454302379" duration="34146000" />
+      <workItem from="1738611512722" duration="1878000" />
     </task>
     <servers />
   </component>
@@ -139,14 +105,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/utilities/ImageUtil.cs</url>
           <line>17</line>
-          <properties documentPath="C:\Users\gdsie\dev\ainum\utilities\ImageUtil.cs" containingFunctionPresentation="Method 'ConvertImageTo2DArray'">
-            <startOffsets>
-              <option value="504" />
-            </startOffsets>
-            <endOffsets>
-              <option value="505" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\gdsie\dev\ainum\utilities\ImageUtil.cs" containingFunctionPresentation="Method 'ConvertImageTo2DArray'" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

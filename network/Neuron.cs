@@ -67,17 +67,23 @@ namespace ainum.network
             return true;
         }
 
-        public float[,] calcualteDesiredWABDelta()
+        public float[] calcualteDesiredWeightDelta()
         {
-            float[,] wabDeltas = new float[inputs.Length,3];
+            float[] weightDeltas = new float[inputs.Length];
             for (int i = 0; i < weights.Length; i++)
             {
-                wabDeltas[0, i] = weights[i] + inputs[i];
-                wabDeltas[1, i] = inputs[i] + weights[i];
-                wabDeltas
+                weightDeltas[i] = utilities.MathUtils.calculateWeightChange(parentLayer.ParentNetwork.LearningRate, activation, 0, inputs[i], weights[i]);
+            }
+
+            return weightDeltas;
+        }
+        public void commitPropagation(float[] deltas)
+        {
+            for (int i = 0; i < weights.Length; i++)
+            {
+                weights[i] = deltas[i];
             }
         }
-
         public bool randomizeWeightsAndBias()
         {
             for (int i = 0; i < weights.Length; ++i)

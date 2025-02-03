@@ -8,11 +8,13 @@ namespace ainum.network
         public Layer[] Layers;
         private float[] resultValues;
         private float[] inputValues;
+        public float LearningRate;
         private NetworkSettings _settings;
         
         public Network(NetworkSettings networkSettings)
         {
             _settings = networkSettings;
+            LearningRate = networkSettings.LearningRate;
             int LayerCount = networkSettings.LayerCount;
             int[] NeuronsPerLayer = networkSettings.NeuronsPerLayer;
             Layers = new Layer[LayerCount];
@@ -20,7 +22,7 @@ namespace ainum.network
             // Create Layers
             for (int i = 0; i < LayerCount; i++)
             {
-                Layers[i] = new Layer(NeuronsPerLayer[i]);
+                Layers[i] = new Layer(NeuronsPerLayer[i], this);
             }
             
             // Link Layers

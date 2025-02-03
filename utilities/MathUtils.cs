@@ -34,7 +34,7 @@ namespace ainum.utilities
         }
 
 
-        public static float computeCostFunctionOfOneOutput(float[] utter_trash, float[] expected_trash)
+        public static float computeCostFunction(float[] utter_trash, float[] expected_trash)
         {
             float costsum = 0.0f;
             for (int i = 0; i < utter_trash.Length; ++i)
@@ -43,6 +43,13 @@ namespace ainum.utilities
             }
             
             return costsum;
+        }
+        
+        public static float calculateWeightChange(float learningRate, float currentNodeoutput, float currentNodetarget, float prevNodeOutput, float weight)
+        {
+            // Delta Cost / Delta Weight = [output_L - target_L] * [output_L * (1 - output_L)] * output_L-1
+            float dCost_dWeight = (currentNodeoutput - currentNodetarget) * (currentNodeoutput * (1 - currentNodeoutput)) * prevNodeOutput;
+            return weight - (learningRate * dCost_dWeight);
         }
     }
 }
