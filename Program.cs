@@ -1,17 +1,35 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
+using System.Windows.Forms;
+using ainum.forms;
+using ainum.network;
+using ainum.utilities;
 
 namespace ainum
 {
     internal class Program
     {
+        private static Network LoadedNetwork;
+        public static mainWindow mainForm;
+        public static Image loadedImage;
+        [STAThread]
         public static void Main(string[] args)
         {
-            byte[] image = ImageReader.getBytesFromImage("C:\\Users\\GDSIEB01\\dev\\ainum\\Resources\\training_Data\\five_1.png");
-            for (int i = 0; i < image.Length; i++)
-            {
-                Console.WriteLine(image[i]);
-            }
+            Entropy.assignRandom();
+            mainForm = new mainWindow();
+            mainForm.ShowDialog();
+        }
+
+        public static void loadNetwork(Network network)
+        {
+            LoadedNetwork = network;
+            mainForm.SetupWindowForNetwork();
+        }
+
+        public static Network getLoadedNetwork()
+        {
+            return LoadedNetwork;
         }
     }
 }

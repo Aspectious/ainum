@@ -5,8 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5573e6d-8779-47d9-82da-ed660fa39b9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ImageReader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms/ImageTool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms/ManualPropationForm.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms/ManualPropationForm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms/NetworkCreationWindow.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms/NetworkCreationWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms/mainWindow.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms/mainWindow.Logic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms/mainWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/ILayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/INeuron.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/Layer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/Network.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/NetworkSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/Neuron.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/DataUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/Entropy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/ImageUtil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/MathUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ainum/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ainum/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ainum/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ainum/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageReader.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/five_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/four_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/number-template.xcf" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/training_Data/number-template.xcf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/one_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/three_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/training_Data/two_5.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ainum.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ainum.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,34 +60,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2lcG9GhRy7rHGWTCbFz2wLzgPba" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Project.ainum.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="ainum" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/ainum.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin/Debug" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -51,7 +106,7 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.8" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -66,6 +121,8 @@
       <option name="presentableId" value="Default" />
       <updated>1725471801213</updated>
       <workItem from="1725471801213" duration="1429000" />
+      <workItem from="1738452718547" duration="1370000" />
+      <workItem from="1738454302379" duration="34146000" />
     </task>
     <servers />
   </component>
@@ -74,7 +131,25 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/utilities/ImageUtil.cs</url>
+          <line>17</line>
+          <properties documentPath="C:\Users\gdsie\dev\ainum\utilities\ImageUtil.cs" containingFunctionPresentation="Method 'ConvertImageTo2DArray'">
+            <startOffsets>
+              <option value="504" />
+            </startOffsets>
+            <endOffsets>
+              <option value="505" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

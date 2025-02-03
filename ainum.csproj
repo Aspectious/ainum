@@ -37,40 +37,76 @@
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
+        <Reference Include="System.Drawing" />
+        <Reference Include="System.Drawing.Design" />
+        <Reference Include="System.Windows.Forms">
+          <HintPath>..\..\..\..\WINDOWS\Microsoft.NET\Framework\v4.0.30319\System.Windows.Forms.dll</HintPath>
+        </Reference>
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="ImageReader.cs" />
+        <Compile Include="forms\ImageTool.cs" />
+        <Compile Include="forms\mainWindow.cs" />
+        <Compile Include="forms\mainWindow.Designer.cs" />
+        <Compile Include="forms\mainWindow.Logic.cs">
+          <DependentUpon>mainWindow.cs</DependentUpon>
+        </Compile>
+        <Compile Include="forms\ManualPropationForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="forms\ManualPropationForm.Designer.cs">
+          <DependentUpon>ManualPropationForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="forms\NetworkCreationWindow.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="forms\NetworkCreationWindow.Designer.cs">
+          <DependentUpon>NetworkCreationWindow.cs</DependentUpon>
+        </Compile>
+        <Compile Include="network\ILayer.cs" />
+        <Compile Include="network\INeuron.cs" />
+        <Compile Include="network\Layer.cs" />
+        <Compile Include="network\Network.cs" />
+        <Compile Include="network\NetworkSettings.cs" />
+        <Compile Include="network\Neuron.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="utilities\DataUtils.cs" />
+        <Compile Include="utilities\Entropy.cs" />
+        <Compile Include="utilities\ImageUtil.cs" />
+        <Compile Include="utilities\MathUtils.cs" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Resources\training_Data\five_1.png" />
-      <Content Include="Resources\training_Data\five_2.png" />
-      <Content Include="Resources\training_Data\five_3.png" />
-      <Content Include="Resources\training_Data\five_4.png" />
-      <Content Include="Resources\training_Data\five_5.png" />
-      <Content Include="Resources\training_Data\four_1.png" />
-      <Content Include="Resources\training_Data\four_2.png" />
-      <Content Include="Resources\training_Data\four_3.png" />
-      <Content Include="Resources\training_Data\four_4.png" />
-      <Content Include="Resources\training_Data\four_5.png" />
+      <Content Include="Resources\training_Data\eight\1.png" />
+      <Content Include="Resources\training_Data\five.out" />
+      <Content Include="Resources\training_Data\five.png" />
+      <Content Include="Resources\training_Data\four.png" />
+      <Content Include="Resources\training_Data\nine.png" />
       <Content Include="Resources\training_Data\number-template.xcf" />
-      <Content Include="Resources\training_Data\one_1.png" />
-      <Content Include="Resources\training_Data\one_2.png" />
-      <Content Include="Resources\training_Data\one_3.png" />
-      <Content Include="Resources\training_Data\one_4.png" />
-      <Content Include="Resources\training_Data\one_5.png" />
-      <Content Include="Resources\training_Data\three_1.png" />
-      <Content Include="Resources\training_Data\three_2.png" />
-      <Content Include="Resources\training_Data\three_3.png" />
-      <Content Include="Resources\training_Data\three_4.png" />
-      <Content Include="Resources\training_Data\three_5.png" />
-      <Content Include="Resources\training_Data\two_1.png" />
-      <Content Include="Resources\training_Data\two_2.png" />
-      <Content Include="Resources\training_Data\two_3.png" />
-      <Content Include="Resources\training_Data\two_4.png" />
-      <Content Include="Resources\training_Data\two_5.png" />
+      <Content Include="Resources\training_Data\one\1.png" />
+      <Content Include="Resources\training_Data\seven.png" />
+      <Content Include="Resources\training_Data\six.png" />
+      <Content Include="Resources\training_Data\three.png" />
+      <Content Include="Resources\training_Data\two.png" />
+      <Content Include="Resources\training_Data\zero.png" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Include="forms\ImageTool.resx">
+        <DependentUpon>ImageTool.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="forms\mainWindow.resx">
+        <DependentUpon>mainWindow.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="forms\ManualPropationForm.resx">
+        <DependentUpon>ManualPropationForm.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="forms\NetworkCreationWindow.resx">
+        <DependentUpon>NetworkCreationWindow.cs</DependentUpon>
+      </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Resources\training_Data\three\" />
+      <Folder Include="Resources\training_Data\two\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
